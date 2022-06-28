@@ -58,15 +58,14 @@ Como resultado se obtiene una pagina de inicio con el tablero para dibujar
 
 ![](img/img1.png)
 
-una vez se le da click al boton jugar, muestra la ventana del juego con un campo de texto
+y como se observa, se dibuja un circulo en el canvas
 
 ![](img/img2.png)
 
-En el campo de texto el usuario ingresa el numero de 4 cifras y empieza el juego, como se muestra a continuacion
+y a su vez si abrimos otro navegador se puede ver que tambien aparece lo dibujado anteriormente
 
 ![](img/img3.png)
 
-El jugador sigue ingresando numeros, hasta que consiga ganar.
 
 
 ## Diagrama de Clases
