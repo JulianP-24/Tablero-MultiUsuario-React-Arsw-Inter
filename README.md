@@ -58,14 +58,9 @@ Como resultado se obtiene una pagina de inicio con el tablero para dibujar
 
 ![](img/img1.png)
 
-y como se observa, se dibuja un circulo en el canvas
+dandole click se dibuja y a su vez si abrimos otro navegador se puede ver que tambien aparece lo dibujado anteriormente
 
 ![](img/img2.png)
-
-y a su vez si abrimos otro navegador se puede ver que tambien aparece lo dibujado anteriormente
-
-![](img/img3.png)
-
 
 
 ## Diagrama de Clases
