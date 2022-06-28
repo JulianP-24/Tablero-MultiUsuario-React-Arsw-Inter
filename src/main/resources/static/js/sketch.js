@@ -2,7 +2,7 @@ let datain = [];
 var data;
 
 function setup() {
-  var canvas = createCanvas(640, 480);
+  var canvas = createCanvas(screen.width-80, screen.height-200);
 
 }
   function newDrawing(datain) {
