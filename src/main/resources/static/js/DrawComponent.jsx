@@ -6,21 +6,22 @@ class DrawComponent extends React.Component {
             isLoaded: false,
             status: ""
         };
+        return this;
     }
     componentDidMount() {
         this.timerID = setInterval(
             () => this.checkStatus(),
-            5000
+            10
         );
     }
     checkStatus() {
-        fetch("/status")
+        fetch("/getdraw")
             .then(res => res.json())
             .then(
                 (result) => {
                     this.setState({
                         isLoaded: true,
-                        status: result.status
+                        status: result
                     });
                 },
                 // Note: it's important to handle errors here
@@ -32,8 +33,25 @@ class DrawComponent extends React.Component {
                         error
                     });
                 }
-            )
+            );
+         setdata(this.state.status)
+    
+        const datain  = new FormData();
+        datain.append('data', draw());
+        fetch('/addData', {
+            method: 'POST',
+            body: datain
+        }).then(function (response) {
+            if (response.ok) {
+                return response.text()
+            } else {
+                console.log("se intento");
+                throw "Error";
+            }
+        });
+        
     }
+
     render() {
         const { error, isLoaded, status } = this.state;
         if (error) {
@@ -47,10 +65,13 @@ class DrawComponent extends React.Component {
                     <p>
                         {status}
                     </p>
+                    
                 </div>
             );
         }
     }
+
+    
 }
 
 ReactDOM.render(

@@ -5,11 +5,15 @@
     <title>TODO supply a title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div id="root"></div>
-
+    
+    <h1>Tablero para dibujar: </h1>
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin>
@@ -21,6 +25,12 @@
     <!-- Load our React component. -->
     <script src="js/DrawComponent.jsx" type="text/babel"></script>
     <script src="js/sketch.js"></script>
+    <div id="root"></div>
+    <center>
+        <div>
+            <button type="submit" onclick="limpiar()"> borrar </button>
+        </div>
+    </center>
 </body>
 
 </html>
