@@ -13,7 +13,6 @@ function setup() {
 }
 
 function draw() {
-  
   var ans = [];
   if (mouseIsPressed === true) {
         fill(0, 0, 0);

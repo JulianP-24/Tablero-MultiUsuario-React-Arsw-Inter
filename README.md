@@ -4,13 +4,11 @@
 **Julian Adolfo Peña Marin**
 
 ## Descripcion
-La aplicacion es el famoso juego de Picas y Famas, en su version web, en donde se tiene como objetivo adivinar una lista de 4 numeros. El funcionamiento es sencillo y va de la siguiente manera:
+La aplicacion es un tablero multiusuario desarrollado en react, con la finalidad de que los usuarios puedan dibujar y todos puedan ver que es lo que se dibuja, para esto:
 
- * El usuario ingresara un numero de 4 digitos.
- * Una vez ingresado se compara cada digito que el usuario ingreso con otro numero generado aleatoriamente.
- * Si el numero esta pero en posicion diferente es pica, pero si el numero esta en la misma posicion es Fama.
- * Dependiendo de cual sea se va aumentando un contador, el usuario solamente gana si logra adivinar el numero, es decir si consigue 4 famas.
- * Adicionalmente el usuario tiene 6 intentos, si no lo logra en los 6, perdera el juego.
+ * Cada usuario dibuja con color diferente para que se distinga.
+ * Hay un boton de borrar, que elimina todo lo que se dibujo.
+ * Para dibujar se utiliza el mouse, leyendo los eventos del mismo.
 
 ## Documentacion
 Para obtener la documentacion del proyecto, con el siguiente comando se puede generar:
@@ -23,7 +21,7 @@ Para obtener la documentacion del proyecto, con el siguiente comando se puede ge
 Primero se debe clonar el repositorio, para esto puede utilizar el siguiente comando de git, con la url del repositorio que se quiere clonar, como se muestra a continuación
 
 ```
-    git clone https://github.com/JulianP-24/Lab-PicasFamas-Inter-Arsw.git
+    git clone https://github.com/JulianP-24/Tablero-MultiUsuario-React-Arsw-Inter.git
 ```
 
 Una vez clonado para generar el JAR, debe poner el siguiente comando
@@ -34,29 +32,29 @@ Una vez clonado para generar el JAR, debe poner el siguiente comando
 
 Despues puede correrlo con el siguiente comando, ubicandose en la carpeta raiz
 ```
-    java -cp "./target/classes/" edu.escuelaing.arsw.picasYfamas.PicasYfamasApplication
+    java -cp "./target/classes/" edu.escuelaing.arsw.App  
 ```
 
 Otra forma para correrlo, ya generado el JAR, es con el siguiente comando
 
 ```
-    java -cp "target/picasYfamas-0.0.1-SNAPSHOT.jar" edu.escuelaing.arsw.picasYfamas.PicasYfamasApplication
+    "target/TableroMultiusuario-1.0-SNAPSHOT.jar" edu.escuelaing.arsw.App
 ```
 y sino corre, la aplicacion tambien se puede probar con el link de heroku
 
 ## Link heroku
 
-https://immense-reaches-02811.herokuapp.com/
+https://gentle-falls-19705.herokuapp.com/
 
 ## Funcionamiento de la Aplicacion en Heroku
 
 Para verificar el funcionamiento de la aplicacion en Heroku, solo se accede al link de heroku, mostrado anteriormente, como se muestra a continuacion:
 
 ```
-    https://immense-reaches-02811.herokuapp.com/
+    https://gentle-falls-19705.herokuapp.com/
 ```
 
-Como resultado se obtiene una pagina de bienvenida, con un boton para jugar
+Como resultado se obtiene una pagina de inicio con el tablero para dibujar
 
 ![](img/img1.png)
 
