@@ -61,7 +61,7 @@ class DrawComponent extends React.Component {
         } else {
             return (
                 <div>
-                    <h1>The server status is:</h1>
+                    <h1></h1>
                     <p>
                         {status}
                     </p>
